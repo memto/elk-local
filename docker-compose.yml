@@ -56,6 +56,7 @@ services:
       - elk
     depends_on:
       - elasticsearch
+    # command: ["wait-for-it.sh", "elasticsearch:9200", "--", "echo", "elasticsearch is up"]
 
   # kibana:
   #   build:
